@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="sv">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <!-- nedan ökar sökopimerad den översta kort beskrivning och andra är relevants nyckelord -->
+    <meta name="description" content="Upptäck nya maträtter med vår Maträttsgenerator och skapa din egen receptbank. Enkel att använda och full av inspiration!">
+    <meta name="keywords" content="maträttsgenerator, receptbank, mat, recept, slumpmässig maträtt">
+    
+    <title>Recept med Maträttsgenerator</title>
+    <script src="jquery-3.7.1.js"></script>
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+    <header>
+        <h1>Recept</h1>
+        <p>Skapa egna recept och få nya ideér till middagen</p>
+    </header>
+
+        <main>
+            <section>
+                <h3>Slumpa en maträtt</h3>
+                <button id="genereraMaträtt">Generera maträtt </button>
+                <p id="slumpaMat"></p>
+            </section>
+                
+            <section>
+                <h2>Lägg till nytt recept</h2>
+
+                <form id="receptForm">
+                    <label for="matNamn">Recept namn:</label>
+                    <input type="text" id="matNamn" required>
+
+                    <label for="ingredienser">Ingredienser:</label>
+                    <textarea id="ingredienser" required></textarea>
+
+                    <label for="instruktioner">Instruktioner:</label>
+                    <textarea id="instruktioner" required></textarea>
+                    
+                    <button type="submit">Lägg till</button>
+
+                </form>
+            </section>
+
+            <section>
+                <h2>Alla Recept</h2>
+                <ul id="receptLista"></ul>
+            </section>
+        </main>
+        <footer>
+            <p>&copy; 2024 Maträttsgenerator </p>
+        </footer>
+    
+    <script src="script.js"></script>
+</body>
+</html>
